@@ -1,1 +1,2 @@
 Because all the supported NP systems are very large, so the KPOINTS all assume the Gamma point.
+The POSCAR files for the supported NP of various NP coverage can be found the the folder of "python script for generating structure/generated structure/"
