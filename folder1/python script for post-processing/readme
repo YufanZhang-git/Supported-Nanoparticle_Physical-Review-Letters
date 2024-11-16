@@ -1,1 +1,6 @@
-
+"Read_CHGCAR.py" do the following things:
+1. read in CHGDIFF file, extract and plot a 2D slice
+2. apply a mask to the 2D slice and only plot a certain unmasked area
+3. extract a 1D profile of charge density difference and plot it 
+4. calculate the average dipole moment of the whole cell [e/nm], which can then be compared with DPFT results
+5. calculate the average charge density of the whole cell [e/nm2] 
