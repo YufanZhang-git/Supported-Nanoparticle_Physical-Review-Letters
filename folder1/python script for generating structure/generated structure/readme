@@ -1,0 +1,2 @@
+This folder contains the supported NP model for the POSCAR file.
+The NP coverage on support is 15%, 26%, 36%, 54%, 62% for increasing number of support atoms 896, 528, 360, 256, 224.
