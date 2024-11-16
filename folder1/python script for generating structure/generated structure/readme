@@ -1,2 +1,3 @@
-This folder contains the supported NP model for the POSCAR file.
-The NP coverage on support is 15%, 26%, 36%, 54%, 62% for increasing number of support atoms 896, 528, 360, 256, 224.
+This folder contains the supported NP model for the POSCAR file. 
+You could just upload the file to the VASP folder in your supercomputer and rename the file as POSCAR.
+The NP coverage on support is 15%, 26%, 36%, 54%, 62% corresponding to number of support atoms 896, 528, 360, 256, 224.
