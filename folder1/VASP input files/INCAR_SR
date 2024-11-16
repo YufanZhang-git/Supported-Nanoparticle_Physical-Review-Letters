@@ -1,0 +1,32 @@
+SYSTEM = SupNP:Ag NP94, Au slab, IMIX for SCF convergence, Rough SR  
+# General
+NCORE =8 # Number of cores working on given orbital (for JURECA/JUWELS: take 2 * number of nodes)
+# GGA = RP # RP=RPBE, 2005,2012 Norskov; 2015 KAIST
+PREC = Accurate
+ENCUT = 400 # maximum ENMAX comes from oxygen
+LWAVE = .TRUE. # write WAVECAR
+LCHG = .TRUE. # write CHGCAR
+LVHAR = .TRUE. # Electrostatic contributions only (ionic + Hartree) written to LOCPOT
+LDIPOL = .TRUE.
+IDIPOL = 3
+
+# Electronic parameters
+ISTART = 1 # Read WAVECAR
+ICHARG = 1 # Initial charge density
+EDIFF = 1E-5 # SCF break condition, energy change, default=1e-4
+ALGO = Normal # electronic minimization algorithm
+NELM = 150 # Maxi number SCF steps
+ISMEAR = -1 # Fermi smearing
+SIGMA = 0.05 #0.1 (Norskov 2012), width of smearing, 0.025 means 300K; Tobias 0.05
+ISPIN = 2 # nonspin for CO, without unpaired electrons; TB: adsorbed molecule might have spin
+IMIX = 4 # Pulay mixing
+AMIX = 0.02 # 0.02 for metal; default 0.4
+BMIX = 1 # higher value -> stable SCF; default 1
+
+
+# Ionic parameters
+IBRION = 2 # ionic relaxation using conjugate gradient algorithm
+NSW = 8 # Maximum number of ionic steps
+ISIF = 2 # 2 means only position can be optimized, while fix shape and volume
+EDIFFG = -0.05 # -0.05 (Rossmeisl 2022); Tobias -0.01
+IVDW = 12 #
