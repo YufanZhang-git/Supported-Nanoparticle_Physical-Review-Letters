@@ -1,1 +1,2 @@
-
+The python script "FCC_hex_to_orthor.py" is meant for converting the cell from hexagonal to orthornormal cell. 
+In practice, I use VESTA to change the cell shape, but I use "FCC_hex_to_orthor.py" to quickly estimate how many repititions of x and y do I need to expand in VESTA.
